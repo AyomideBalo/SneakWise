@@ -1,0 +1,365 @@
+    .iphone-frame {
+        width: 300px;
+        height: 600px;
+        border-radius: 30px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        margin: 0 auto; 
+        margin-top: 7px;
+    }
+
+    .iphone-screen {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-header {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        background: linear-gradient(to bottom, #9c7a41 0%, #c8ad7f 100%);
+    }
+
+    .chat-messages {
+        flex-grow: 1;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    .chat-input {
+        display: flex;
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+
+    .chat-input input {
+        flex-grow: 1;
+        padding: 5px;
+    }
+
+    .chat-input button {
+        margin-left: 10px;
+    }
+
+    .message {
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .message.you {
+      background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color:white;
+
+    }
+
+    .message.them{
+      background: linear-gradient(to bottom, #eee 0%, #c5c9cb 100%);
+      border-radius: 20px;
+      color: black;
+    }
+
+    .message.bot {
+        background-color: #e2e2e2;
+        align-self: flex-start;
+    }
+    
+    :root {
+        --primary: #03A9F4;
+        --secondary: #21D07A;
+        --background: #121212;
+        --gray: #BCBDC0;
+        --textLeft: #121212;
+        --textLeftBackground: #DCDCDC;
+        --textRight: #FFF;
+        --textRightBackground: #03A9F4;
+        --danger: #F44D3C;
+        --dark: #032541;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: helvetica;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    
+      .messages {
+        position: relative;
+        list-style: none;
+        padding: 20px 10px 0 10px;
+        margin: 0;
+        height: 354px;
+        overflow-y: scroll;
+      }
+      
+      .messages .message {
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 20px;
+        transition: all 0.5s linear;
+        opacity: 0;
+      }
+      
+* {
+  box-sizing: border-box;
+}
+
+.iphone-x {
+  position: fixed;
+  z-index:9999;
+  margin: 30px;
+  width: 360px;
+  height: 780px;
+  background-color: #7371ee;
+  background-image: linear-gradient(60deg, #e0dd30 1%,#cc5500 100%);
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+  align-content:center;
+  vertical-align: center;
+  margin-bottom: 10px;
+}
+
+.iphone-x:before,
+.iphone-x:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Home button indicator */
+.iphone-x:after {
+  bottom: 7px;
+  width: 140px;
+  height: 4px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Front camera/speaker frame */
+.iphone-x:before {
+  top: 0px;
+  width: 56%;
+  height: 30px;
+  background-color: #1f1f1f;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.speaker,
+.frontCam {
+  position: absolute;
+  display: block;
+  color: transparent;
+}
+
+/* Speaker */
+.speaker {
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 6px);
+  height: 8px;
+  width: 15%;
+  background-color: #101010;
+  border-radius: 8px;
+  box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+}
+
+/* Front camera */
+.frontCam {
+  left: 10%;
+  top: 0px;
+  transform: translate(180px, 4px);
+  width: 12px;
+  height: 12px;
+  background-color: #101010;
+  border-radius: 12px;
+  box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+}
+
+.frontCam:after {
+  content: '';
+  position: absolute;
+  background-color: #2d4d76;
+  width: 6px;
+  height: 6px;
+  top: 3px;
+  left: 3px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container2{
+  align-items: center;
+  vertical-align: center;
+  justify-content: flex-end;
+  margin-top: -18px;
+  
+}
+
+
+.chat-list{
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  max-height: calc(100% - 80px);
+  padding: 10px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  margin-left: 15px;
+}
+
+.chat-list::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height:10px;
+}
+
+.chat-list::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the track */
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background: rgb(178, 171, 171); 
+  border-radius: 5px; 
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+  background: rgb(85, 80, 80);
+}
+
+.fixed-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%; 
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.fixed-chat-button:hover {
+  background-color: #0056b3; /* Hover background used frequentlt to show user they are about the click a particular object*/
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); 
+  z-index: 9999;
+  display: none; 
+}
+
+#chat-window {
+  display: none; /* hide the chat window by default */
+}
+
+.overlay {
+  display: none; /* hide the overlay by default */
+}
+
+.open-chat {
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 2px 4px, rgba(0, 0, 0, 0.85) 0px 7px 13px -3px;
+  background-color: #b39e0079;
+  margin-right: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  margin-bottom: -5px;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  /* Styles for small screens */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for medium screens */
+}
+
+@media (min-width: 1024px) {
+  /* Styles for large screens */
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .iphone-frame {
+    max-width: 3000px;
+    height: 500px;
+    margin-top: 20px;
+    animation: moveFrame 0.5s ease-in-out;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .iphone-frame {
+    max-width: 300px;
+    height: 500px;
+    margin-top: 30px;
+    animation: moveFrame 0.5s ease-in-out;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .iphone-frame {
+    max-width: 350px;
+    height: 550px;
+    margin-top: 40px;
+    animation: moveFrame 0.5s ease-in-out;
+  }
+}
+
+@keyframes moveFrame {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes movePhone {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
