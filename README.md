@@ -1,5 +1,17 @@
 # SneakWise - For Sneaker Lovers 
 
+<div align="center">
+        <img src="https://github.com/AyomideBalo/AyomideBalo/blob/c3889d98db284a001fac5d614c2a540576116a37/reports/Screenshot%202025-08-31%20at%2023.32.03.png" width="350" alt="Project Image 1">
+        <img src="https://github.com/AyomideBalo/AyomideBalo/blob/c3889d98db284a001fac5d614c2a540576116a37/reports/Screenshot%202025-08-31%20at%2023.33.57.png" width="350" alt="Project Image 1">
+        <img src="https://github.com/AyomideBalo/AyomideBalo/blob/c3889d98db284a001fac5d614c2a540576116a37/reports/Screenshot%202025-08-31%20at%2023.34.33.png" width="350" alt="Project Image 1">
+  </div>
+
+# Medium-fidelity Wireframe
+
+<div align="center">
+        <img src="https://github.com/AyomideBalo/AyomideBalo/blob/c3889d98db284a001fac5d614c2a540576116a37/reports/High-fidelity-prototype-UOL.png" width="750" alt="Project Image 1">
+  </div>
+ 
 <h2>What influenced this theme?</h2>
 The overall goal of my software application is to create a tourist website for a hobbyist within a chosen city; leveraging gaps within an area of enjoyment, gaps that could be filled to increase accessibility within a certain city. I decided this was a great opportunity to create a central hub for sneaker lovers within the city of London; I have named the application ‘SneakWise’.
 
