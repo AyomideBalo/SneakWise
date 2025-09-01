@@ -21,6 +21,7 @@ The sneaker culture in London has remained alive since discovering it as a child
 
 <h2>The project itself</h2>
 For this project, I created a high-fidelity prototype using HTML, CSS and JavaScript. I conducted usability testing with five individuals and performed a heuristic evaluation based on Nielsen's 10 Heuristics. The valuable feedback I gathered helped me refine the prototype's design, leading to key improvements such as streamlining the navigation to enhance the overall user experience.
-
+</br>
+<br/>
 Link to deployed site: https://relaxed-torrone-7cfe7e.netlify.app
 
